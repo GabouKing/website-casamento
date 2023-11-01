@@ -8,8 +8,8 @@ export default function Home() {
         <p className='font-sans text-2xl md:text-base lg:text-lg px-6 py-8 text-white-100 m-auto w-96'>Essa é a lista de presente do nosso casamento, 
           porém a sua presença é mais importante para nós!
           Caso deseje nos presentear, segue as opções na lista.</p>
-        <a href="/presentes" className='flex justify-center hover:cursor-default'>
-          <p className='font-sans text-2xl md:text-base lg:text-lg px-6 py-8 text-white-100 m-auto w-96'>Acesse a lista :)</p>
+        <a href="/presentes" className='flex flex-col justify-center align-center hover:cursor-default'>
+          <p className='font-sans text-2xl md:text-base text-center lg:text-lg px-6 py-8 text-white-100 m-auto w-96'>Acesse a lista :)</p>
           <Image src={florzinha} className='w-1/5  md:w-1/4 lg:w-1/2transition-transform transform hover:rotate-90 hover:cursor-pointer' alt='proxima pagina' /></a>       
       </div>
     </main>
