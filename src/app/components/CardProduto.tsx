@@ -7,7 +7,9 @@ const CardProduto = ({ data }: { data: any }) => {
   const [modalAberto, setModalAberto] = useState(false);
 
   const handleClick = () => {  
-    window.open(data.urlProduto, '_blank');    
+    if(data.id != 100){
+      window.open(data.urlProduto, '_blank');    
+    }
     setModalAberto(true);
   };
 
