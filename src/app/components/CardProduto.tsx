@@ -33,11 +33,11 @@ const CardProduto = ({ data }: { data: any }) => {
         <Image src={data.urlFoto} alt="produto" className='h-full block w-full'
         width={600} 
         height={400} />
-        <p className="text-sans text-black">
+        <p className="font-sans text-black">
            {data.nomeProduto}
         </p>
       </div>
-      <a onClick={handleClick} className='text-sans text-black p-2 border border-green-900 rounded-3xl hover:bg-green-900 hover:text-white-100'>Acesse o link</a>
+      <a onClick={handleClick} className='font-sans text-black p-2 border border-green-900 rounded-3xl hover:bg-green-900 hover:text-white-100'>Acesse o link</a>
       {(modalAberto && data.id != 100) && (      
         <div className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-gray-800 bg-opacity-75 z-50">
         <div className="bg-white-100 p-4 rounded-lg text-center">
