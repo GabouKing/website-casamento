@@ -30,9 +30,9 @@ export default function Home() {
   } ,[])
   
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white-500">
+    <main className="flex min-h-screen w-full flex-col items-center justify-between p-24 bg-white-500">
       <p className="font-alt text-4xl sm:text-7xl md:text-6xl lg:text-5xl xl:text-9xl text-green-900">Gabriel e Beatriz</p>
-      <p className="font-sans text-1xl p-1 m-auto w-100">Os Eletrodomésticos deverão ser 110V na cor preta :)</p>
+      <p className="font-sans text-2xl p-1 m-auto w-100">Os Eletrodomésticos deverão ser 110V na cor preta :)</p>
       <div className='flex flex-1 flex-col justify-center align-center m-auto'>                     
       </div>
       <div className="flex flex-1 flex-row flex-wrap">
