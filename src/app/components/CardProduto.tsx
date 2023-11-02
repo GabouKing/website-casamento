@@ -32,6 +32,14 @@ const CardProduto = ({ data }: { data: any }) => {
   return (
     <div className={`flex flex-1 flex-col items-center p-16 m-2 bg-white-100 w-80 max-h-[450px] rounded-3xl ${data.comprado ? 'opacity-50 pointer-events-none' : ''}`}>
       <div className='flex flex-1 flex-col items-center mb-auto w-64 h-max-content'>
+        {
+          !data == null &&
+          <>
+          <div className="relative top-0 left-0 w-full h-full flex items-center justify-center ">            
+          <div className="animate-pulse rounded-full h-16 w-16 border-t-2 border-green-900"></div>
+          </div>
+          </>
+        }
         <Image src={data.urlFoto} alt="produto" className='h-full block w-full'
         width={600} 
         height={400} />
@@ -43,20 +51,20 @@ const CardProduto = ({ data }: { data: any }) => {
       {(modalAberto && data.id != 100) && (      
         <div className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-gray-800 bg-opacity-75 z-50">
         <div className="bg-white-100 p-4 rounded-lg text-center">
-          <p className="text-black">Deseja comprar este produto?</p>
-          <button className="text-white bg-green-500 p-2 m-2 rounded" onClick={handleCompraConfirmado}>Confirmar</button>
-          <button className="text-white bg-red-500 p-2 m-2 rounded" onClick={handleCloseModal}>Cancelar</button>
+          <p className="font-sans text-black">Deseja comprar este produto?</p>
+          <button className="font-sans text-white bg-green-900 p-2 m-2 rounded" onClick={handleCompraConfirmado}>Confirmar</button>
+          <button className="font-sans text-white bg-red-900 p-2 m-2 rounded" onClick={handleCloseModal}>Cancelar</button>
         </div>
       </div>
       )}
       {(modalAberto && data.id == 100) &&(
         <div className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-gray-800 bg-opacity-75 z-50">
         <div className="bg-white-100 p-4 rounded-lg text-center">
-          <p className="text-black">TA PIXURUCO MEU?</p>   
+          <p className="font-sans text-black">TA PIXURUCO MEU?</p>   
           <Image src={pixuruco} alt="produto" className='h-full  w-full'
            width={800} 
            height={900}/>       
-          <button className="text-white bg-red-500 p-2 m-2 rounded" onClick={handleCloseModal}>Cancelar</button>
+         <button className="font-sans text-white bg-red-900 p-2 m-2 rounded" onClick={handleCloseModal}>Cancelar</button>
         </div>
       </div>
       )}

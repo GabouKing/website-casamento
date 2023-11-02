@@ -36,6 +36,14 @@ export default function Home() {
       <div className='flex flex-1 flex-col justify-center align-center m-auto'>                     
       </div>
       <div className="flex flex-1 flex-row flex-wrap">
+        {
+          listaPresentes.length == 0   && 
+          <>
+          <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center ">
+          <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-green-900"></div>
+          </div>
+          </>
+        }
       {listaPresentes.map((item, index) => (
         <CardProduto key={index} data={item}/>       
       ))}        
