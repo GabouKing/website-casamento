@@ -15,10 +15,10 @@ const CardProduto = ({ data }: { data: any }) => {
     setModalAberto(true);
   };
 
-  const handleNomeChange = (e) => {
+  const handleNomeChange = (e:any) => {
     setNome(e.target.value);
   };
-  const handleDedicatoriaChange = (e) => {
+  const handleDedicatoriaChange = (e:any) => {
     setDedicatoria(e.target.value);
   };
 
