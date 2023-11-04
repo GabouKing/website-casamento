@@ -74,7 +74,7 @@ const CardProduto = ({ data }: { data: any }) => {
           <div className="text-center">
             <p className="font-sans text-black">Deseja comprar este produto?</p>
             <button className={`font-sans text-white-500 bg-green-900 p-2 m-2 rounded ${
-              nome ? '' : 'cursor-not-allowed opacity-50'
+              nome ? '' : 'pointer-events-none opacity-50'
             }`} onClick={handleCompraConfirmado}>Confirmar</button>
             <button className="font-sans text-white-500 bg-red-900 p-2 m-2 rounded" onClick={handleCloseModal}>Cancelar</button>
           </div>
